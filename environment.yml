@@ -1,0 +1,9 @@
+name: image_downloader
+dependencies:
+  - python=3
+  - pip
+  - pyyaml
+  - requests
+  - pip:
+      - pymongo
+      - PyMySQL
