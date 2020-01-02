@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36138845-f4cf-4be6-bc90-19714428983e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/image_downloader.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/image_downloader.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/00_populate_collections.py" beforeDir="false" afterPath="$PROJECT_DIR$/00_populate_collections.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_populate_images.py" beforeDir="false" afterPath="$PROJECT_DIR$/01_populate_images.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01_populate_images.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +15,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1VkO98wnALBIiUBrAtMplgXehUv" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -30,7 +29,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.populate_images">
+  <component name="RunManager" selected="Python.populate_records">
     <configuration name="populate_collections" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="image_downloader" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -53,7 +52,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="populate_images" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="populate_records" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="image_downloader" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -66,7 +65,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01_populate_images.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/01_populate_records.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pull_images" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="image_downloader" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/02_pull_images.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -77,11 +98,13 @@
     </configuration>
     <list>
       <item itemvalue="Python.populate_collections" />
-      <item itemvalue="Python.populate_images" />
+      <item itemvalue="Python.populate_records" />
+      <item itemvalue="Python.pull_images" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.populate_images" />
+        <item itemvalue="Python.populate_records" />
+        <item itemvalue="Python.pull_images" />
         <item itemvalue="Python.populate_collections" />
       </list>
     </recent_temporary>
@@ -108,7 +131,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1577793472062</updated>
-      <workItem from="1577918532092" duration="65000" />
+      <workItem from="1577918532092" duration="14495000" />
     </task>
     <servers />
   </component>
@@ -132,9 +155,39 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="98" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577928255540">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="98" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.2560.1053@0.27.2560.1053" timestamp="1577928255540" />
+    <state x="423" y="311" width="424" height="482" key="FileChooserDialogImpl" timestamp="1577926978833">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state x="423" y="311" width="424" height="482" key="FileChooserDialogImpl/0.27.2560.1053@0.27.2560.1053" timestamp="1577926978833" />
+    <state width="1232" height="244" key="GridCell.Tab.0.bottom" timestamp="1577932754393">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state width="1232" height="244" key="GridCell.Tab.0.bottom/0.27.2560.1053@0.27.2560.1053" timestamp="1577932754393" />
+    <state width="1232" height="244" key="GridCell.Tab.0.center" timestamp="1577932754393">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state width="1232" height="244" key="GridCell.Tab.0.center/0.27.2560.1053@0.27.2560.1053" timestamp="1577932754393" />
+    <state width="1232" height="244" key="GridCell.Tab.0.left" timestamp="1577932754393">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state width="1232" height="244" key="GridCell.Tab.0.left/0.27.2560.1053@0.27.2560.1053" timestamp="1577932754393" />
+    <state width="1232" height="244" key="GridCell.Tab.0.right" timestamp="1577932754393">
+      <screen x="0" y="27" width="2560" height="1053" />
+    </state>
+    <state width="1232" height="244" key="GridCell.Tab.0.right/0.27.2560.1053@0.27.2560.1053" timestamp="1577932754393" />
     <state x="776" y="188" key="SettingsEditor" timestamp="1577918558352">
       <screen x="0" y="27" width="2560" height="1053" />
     </state>
     <state x="776" y="188" key="SettingsEditor/0.27.2560.1053@0.27.2560.1053" timestamp="1577918558352" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/image_inventory$populate_images.coverage" NAME="populate_images Coverage Results" MODIFIED="1577928236678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/image_inventory$populate_collections.coverage" NAME="populate_collections Coverage Results" MODIFIED="1577927049546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/image_inventory$02_pull_images.coverage" NAME="pull_images Coverage Results" MODIFIED="1577930901117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/image_inventory$01_populate_records.coverage" NAME="populate_records Coverage Results" MODIFIED="1577932164026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
