@@ -5,29 +5,15 @@ import pymongo
 import os
 import requests
 import sys
-import threading
 
 import lib.mongo_utils as mongo_utils
+from lib.thread_pool import thread_pool, MAX_THREADS
 
 FMT_FILE_MYSQL_CONFIG = "/home/{}/.my.cnf"
 MONGO_CONFIG_FILE = "config.yml"
 
 FMT_IDIGBIO_SEARCH_RECORDS = 'http://search.idigbio.org/v2/search/records?rq={}&fields=["uuid", "data.id", "mediarecords"]&limit=10000000'
 FMT_IDIGBIO_SEARCH_IMAGE = 'http://search.idigbio.org/v2/search/media?mq={}&fields=["accessuri", "data.ac:bestQualityAccessURI", "data.ac:goodQualityAccessURI"]'
-
-MAX_THREADS = os.cpu_count()
-
-
-def thread_pool(func, items, *args):
-    threads = []
-    for item in items:
-        t = threading.Thread(target=func, args=[item] + list(args))
-        if len(threads) >= MAX_THREADS:
-            threads[0].join()
-            threads.pop(0)
-        t.start()
-        threads.append(t)
-    [t.join() for t in threads]
 
 
 def get_img_obj(idigbio_uuid, occid):
